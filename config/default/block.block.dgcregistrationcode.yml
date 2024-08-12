@@ -5,6 +5,7 @@ dependencies:
   module:
     - capitalcamp_blocks
     - system
+    - user
   theme:
     - twentynineteen
 id: dgcregistrationcode
@@ -18,10 +19,17 @@ settings:
   label: 'Training Registration Code'
   label_display: visible
   provider: capitalcamp_blocks
-  dgc_registration_code: 'You will need to use a code when registering for any of the training listed below. The registration code is “DGCTRAIN2023”.  '
+  dgc_registration_code: 'You will need to use a code when registering for any of the training listed below. When prompted for an access code, enter “Drupal2024”.  '
 visibility:
   request_path:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: /full-and-half-day-training
+    pages: "/full-and-half-day-training\r\n/training"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
