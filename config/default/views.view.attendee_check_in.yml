@@ -7,7 +7,7 @@ dependencies:
     - system.menu.admin
     - user.role.administrator
     - user.role.volunteer
-    - webform.webform.2023_registration
+    - webform.webform.2024_registration
     - webform.webform.registration
   module:
     - better_exposed_filters
@@ -436,6 +436,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 50
           total_pages: null
           id: 0
@@ -453,7 +454,6 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
-          pagination_heading_level: h4
       exposed_form:
         type: bef
         options:
@@ -504,9 +504,9 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        webform_submission_value:
-          id: webform_submission_value
-          table: webform_submission_field_2023_registration_last_name
+        webform_submission_value_1:
+          id: webform_submission_value_1
+          table: webform_submission_field_2024_registration_last_name
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -684,23 +684,19 @@ display:
           default_row_class: true
           columns:
             edit_webform_submission: edit_webform_submission
-            webform_submission_value_6: webform_submission_value_6
             webform_submission_value_7: webform_submission_value_7
-            webform_submission_value_8: webform_submission_value_8
-            webform_submission_value_9: webform_submission_value_9
             webform_submission_value_10: webform_submission_value_10
+            webform_submission_value_9: webform_submission_value_9
             webform_submission_value_11: webform_submission_value_11
+            webform_submission_value_8: webform_submission_value_8
+            webform_submission_value_2: webform_submission_value_2
+            webform_submission_value: webform_submission_value
             link_flag: link_flag
-          default: '-1'
+            sid: sid
+            nothing: nothing
+          default: webform_submission_value_10
           info:
             edit_webform_submission:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            webform_submission_value_6:
               sortable: false
               default_sort_order: asc
               align: ''
@@ -714,8 +710,10 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            webform_submission_value_8:
-              align: ''
+            webform_submission_value_10:
+              sortable: false
+              default_sort_order: asc
+              align: views-align-center
               separator: ''
               empty_column: false
               responsive: ''
@@ -726,14 +724,26 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            webform_submission_value_10:
+            webform_submission_value_11:
               sortable: false
               default_sort_order: asc
-              align: views-align-center
+              align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            webform_submission_value_11:
+            webform_submission_value_8:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            webform_submission_value_2:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            webform_submission_value:
               sortable: false
               default_sort_order: asc
               align: ''
@@ -743,6 +753,18 @@ display:
             link_flag:
               sortable: false
               default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            sid:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            nothing:
               align: ''
               separator: ''
               empty_column: false
@@ -858,9 +880,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           text: edit
-        webform_submission_value_5:
-          id: webform_submission_value_5
-          table: webform_submission_field_2023_registration_ticket_status
+        webform_submission_value_7:
+          id: webform_submission_value_7
+          table: webform_submission_field_2024_registration_ticket_status
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -911,9 +933,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           webform_check_access: 1
-        webform_submission_value_3:
-          id: webform_submission_value_3
-          table: webform_submission_field_2023_registration_last_name
+        webform_submission_value_10:
+          id: webform_submission_value_10
+          table: webform_submission_field_2024_registration_last_name
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -964,9 +986,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           webform_check_access: 1
-        webform_submission_value_2:
-          id: webform_submission_value_2
-          table: webform_submission_field_2023_registration_first_name
+        webform_submission_value_9:
+          id: webform_submission_value_9
+          table: webform_submission_field_2024_registration_first_name
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1017,9 +1039,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           webform_check_access: 1
-        webform_submission_value_4:
-          id: webform_submission_value_4
-          table: webform_submission_field_2023_registration_preferred_name
+        webform_submission_value_11:
+          id: webform_submission_value_11
+          table: webform_submission_field_2024_registration_preferred_name
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1070,9 +1092,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           webform_check_access: 1
-        webform_submission_value:
-          id: webform_submission_value
-          table: webform_submission_field_2023_registration_company_name
+        webform_submission_value_8:
+          id: webform_submission_value_8
+          table: webform_submission_field_2024_registration_company_name
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1123,9 +1145,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           webform_check_access: 1
-        webform_submission_value_1:
-          id: webform_submission_value_1
-          table: webform_submission_field_2023_registration_please_indicate_the_days_when_you_ll_need_lunch_this_will_help_u
+        webform_submission_value_2:
+          id: webform_submission_value_2
+          table: webform_submission_field_2024_registration_please_indicate_the_days_when_you_ll_need_lunch_this_will_help_u
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1176,9 +1198,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           webform_check_access: 1
-        webform_submission_value_6:
-          id: webform_submission_value_6
-          table: webform_submission_field_2023_registration_dietary_restrictions
+        webform_submission_value:
+          id: webform_submission_value
+          table: webform_submission_field_2024_registration_dietary_restrictions
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1395,9 +1417,9 @@ display:
           empty_zero: false
           hide_alter_empty: false
       sorts:
-        webform_submission_value:
-          id: webform_submission_value
-          table: webform_submission_field_2023_registration_last_name
+        webform_submission_value_1:
+          id: webform_submission_value_1
+          table: webform_submission_field_2024_registration_last_name
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1421,7 +1443,7 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            2023_registration: 2023_registration
+            2024_registration: 2024_registration
           group: 1
           exposed: false
           expose:
@@ -1452,28 +1474,27 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        webform_submission_value:
-          id: webform_submission_value
-          table: webform_submission_field_2023_registration_ticket_status
+        webform_submission_value_1:
+          id: webform_submission_value_1
+          table: webform_submission_field_2024_registration_ticket_status
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: webform_submission_select_filter
           operator: in
-          value:
-            Ticket: Ticket
+          value: {  }
           group: 1
           exposed: true
           expose:
-            operator_id: webform_submission_value_op
+            operator_id: webform_submission_value_1_op
             label: 'Ticket Status'
             description: ''
             use_operator: false
-            operator: webform_submission_value_op
+            operator: webform_submission_value_1_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: webform_submission_value
+            identifier: webform_submission_value_1
             required: false
             remember: false
             multiple: false
@@ -1514,7 +1535,7 @@ display:
           entity_type: flagging
           plugin_id: flag_filter
           operator: '='
-          value: '0'
+          value: All
           group: 1
           exposed: true
           expose:
@@ -1526,7 +1547,7 @@ display:
             operator_limit_selection: false
             operator_list: {  }
             identifier: checkedin
-            required: true
+            required: false
             remember: true
             multiple: false
             remember_roles:
@@ -1541,6 +1562,59 @@ display:
               media_creator: '0'
               media_manager: '0'
               volunteer: '0'
+              sponsor: '0'
+              content_editor: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        webform_submission_value:
+          id: webform_submission_value
+          table: webform_submission_field_2024_registration_first_name
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: webform_submission_field_filter
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: webform_submission_value_op
+            label: 'First or given name'
+            description: ''
+            use_operator: false
+            operator: webform_submission_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: webform_submission_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              page_creator: '0'
+              layout_manager: '0'
+              page_reviewer: '0'
+              landing_page_creator: '0'
+              landing_page_reviewer: '0'
+              media_creator: '0'
+              media_manager: '0'
+              volunteer: '0'
+              sponsor: '0'
+              content_editor: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -1555,7 +1629,7 @@ display:
             group_items: {  }
         webform_submission_value_2:
           id: webform_submission_value_2
-          table: webform_submission_field_2023_registration_first_name
+          table: webform_submission_field_2024_registration_last_name
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1567,7 +1641,7 @@ display:
           exposed: true
           expose:
             operator_id: webform_submission_value_2_op
-            label: 'First or given name'
+            label: 'Last or family name'
             description: ''
             use_operator: false
             operator: webform_submission_value_2_op
@@ -1606,7 +1680,7 @@ display:
             group_items: {  }
         webform_submission_value_3:
           id: webform_submission_value_3
-          table: webform_submission_field_2023_registration_last_name
+          table: webform_submission_field_2024_registration_preferred_name
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1618,64 +1692,13 @@ display:
           exposed: true
           expose:
             operator_id: webform_submission_value_3_op
-            label: 'Last or family name'
+            label: 'Preferred name'
             description: ''
             use_operator: false
             operator: webform_submission_value_3_op
             operator_limit_selection: false
             operator_list: {  }
             identifier: webform_submission_value_3
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              page_creator: '0'
-              layout_manager: '0'
-              page_reviewer: '0'
-              landing_page_creator: '0'
-              landing_page_reviewer: '0'
-              media_creator: '0'
-              media_manager: '0'
-              volunteer: '0'
-              sponsor: '0'
-              content_editor: '0'
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        webform_submission_value_4:
-          id: webform_submission_value_4
-          table: webform_submission_field_2023_registration_preferred_name
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: webform_submission_field_filter
-          operator: contains
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: webform_submission_value_4_op
-            label: 'Preferred name'
-            description: ''
-            use_operator: false
-            operator: webform_submission_value_4_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: webform_submission_value_4
             required: false
             remember: false
             multiple: false
@@ -1798,9 +1821,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           counter_start: 1
-        webform_submission_value_2:
-          id: webform_submission_value_2
-          table: webform_submission_field_2023_registration_last_name
+        webform_submission_value_6:
+          id: webform_submission_value_6
+          table: webform_submission_field_2024_registration_last_name
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1851,9 +1874,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           webform_check_access: 1
-        webform_submission_value_1:
-          id: webform_submission_value_1
-          table: webform_submission_field_2023_registration_first_name
+        webform_submission_value_5:
+          id: webform_submission_value_5
+          table: webform_submission_field_2024_registration_first_name
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1904,9 +1927,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           webform_check_access: 1
-        webform_submission_value_3:
-          id: webform_submission_value_3
-          table: webform_submission_field_2023_registration_preferred_name
+        webform_submission_value_7:
+          id: webform_submission_value_7
+          table: webform_submission_field_2024_registration_preferred_name
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1957,9 +1980,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           webform_check_access: 1
-        webform_submission_value:
-          id: webform_submission_value
-          table: webform_submission_field_2023_registration_email
+        webform_submission_value_4:
+          id: webform_submission_value_4
+          table: webform_submission_field_2024_registration_email
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -2023,7 +2046,7 @@ display:
           plugin_id: bundle
           operator: in
           value:
-            2023_registration: 2023_registration
+            2024_registration: 2024_registration
           group: 1
           exposed: false
           expose:
